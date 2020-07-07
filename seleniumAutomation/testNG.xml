@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="DockerIntegrationTestwithJenkins" >
+  <test name="DockerTest" >
+    <classes>
+       <class name="com.java.seleniumAutomation.DockerIntegrationTest" />
+    </classes>
+  </test>
+ </suite>
