@@ -1,9 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="DockerIntegrationTestwithJenkins" >
-  <test name="DockerTest" >
-    <classes>
-       <class name="com.java.seleniumAutomation.DockerIntegrationTest" />
-    </classes>
-  </test>
- </suite>
+<suite name="DockerIntegrationTestwithJenkins" parallel="classes">
+	<test name="DockerTest">
+		<classes>
+			<class name="com.java.seleniumAutomation.Setup_DockerGrid" />
+			<class name="com.java.seleniumAutomation.DockerIntegrationTest" />
+			<class name="com.java.seleniumAutomation.DockerIntegrationTest2" />
+			<class name="com.java.seleniumAutomation.DockerIntegrationTest3" />
+		</classes>
+	</test>
+</suite>
